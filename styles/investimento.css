@@ -1,0 +1,142 @@
+@import url(../style.css);
+
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--branco-padrao);
+}
+
+.header,
+.search-bar,
+.transaction {
+    margin: 15px;
+    padding: 15px;
+}
+
+.header i {
+    color: #800020;
+    font-size: 20px;
+}
+
+h1 {
+    margin-left: 5%;
+    font-size: 1.8rem;
+    color: var(--preto-padrao);
+}
+
+.transaction {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.search-bar {
+    border-radius: 40px;
+    background-color: #F0F0F0;
+    padding-right: 40px;
+    position: relative;
+}
+
+.search-bar input {
+    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 15px;
+    border: none;
+    width: 90%;
+    height: 90%;
+    box-shadow: none;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    padding-right: 10px;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.transaction {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+.transaction-icon {
+    font-size: 1.5rem;
+    background-color: #EDEDED;
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.balance,
+.investment-options,
+.investment-input {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+}
+
+.balance h2,
+.balance p,
+.investment-input h4 {
+    color: #800020;
+}
+
+.balance button {
+    color: #800020;
+    font-size: 24px;
+}
+
+.balance button:hover {
+    color: #800020;
+}
+
+.investment-options .btn {
+    width: 100%;
+    background-color: #800020;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.investment-options .btn:hover {
+    background-color: white;
+    color: #800020;
+    border: 1px solid #800020;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nav-bottom {
+    background-color: #FFF;
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.menu-icones {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+}
+
+.menu-icones i {
+    color: #800020;
+    font-size: 25px;
+}
+
+.menu-icones.hide {
+    transform: translateY(100%);
+}

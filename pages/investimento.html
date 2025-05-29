@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investimentos</title>
+    <link rel="stylesheet" href="../styles/investimento.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header d-flex justify-content-between align-items-center">
+        <a href="#Tela de usuario"><i class="fas fa-arrow-left"></i></a>
+        <h1>Investimentos</h1>
+        <div class="d-flex align-items-center">
+            <a href="#Ajuda"><i class="fas fa-question-circle mx-2" title="Ajuda"></i></a>
+            <div class="dropdown d-inline">
+                <a href="#" id="ordenarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-sort-amount-down-alt text-purple" title="Ordenar"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="ordenarDropdown">
+                    <li><a class="dropdown-item" href="#" onclick="ordenar('data')">Data</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="ordenar('valores')">Valores</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="ordenar('saidas')">Entradas</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="ordenar('entradas')">Saídas</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Saldo e Cartões -->
+    <div class="balance text-center">
+        <h2>R$ 3.000,00</h2>
+        <p><a href="#" class="text-decoration-none text-muted">Acessar cartões</a></p>
+        <div class="d-flex justify-content-center mt-2">
+            <button class="btn btn-link mx-2"><i class="bi bi-arrow-clockwise"></i></button>
+            <button class="btn btn-link mx-2"><i class="bi bi-eye-slash"></i></button>
+        </div>
+    </div>
+
+    <!-- Opções de Investimento -->
+    <div class="investment-options text-center">
+        <div class="row">
+            <div class="col-3">
+                <button class="btn"><i class="bi bi-currency-dollar fs-3"></i><br>Investimento</button>
+            </div>
+            <div class="col-3">
+                <button class="btn"><i class="bi bi-cash-stack fs-3"></i><br>Resgatar</button>
+            </div>
+            <div class="col-3">
+                <button class="btn"><i class="bi bi-graph-up fs-3"></i><br>Rendimento</button>
+            </div>
+            <div class="col-3">
+                <button class="btn"><i class="bi bi-person-circle fs-3"></i><br>Previdência</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Investir e Dados do Investimento -->
+    <div class="investment-input text-center">
+        <button class="btn btn-orange w-100 mb-3">Investir +</button>
+        <h4>Quanto você quer investir?</h4>
+        <h2>R$ 10.000,00</h2>
+        <div class="d-flex justify-content-around mt-4">
+            <div>
+                <i class="bi bi-calendar-check fs-3"></i>
+                <p class="mb-0">Data</p>
+                <p>30/11/24</p>
+            </div>
+            <div>
+                <p class="mb-0">Nome do investimento</p>
+                <p><strong>Casa própria</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="menu-icones">
+        <a href="#home" class="menu-item">
+            <i class="bi bi-person-circle" alt="Home"></i>
+        </a>
+        <a href="#ajuda" class="menu-item">
+            <i class="bi bi-patch-question" alt="Ajuda"></i>
+        </a>
+        <a href="#cartoes" class="menu-item">
+            <i class="bi bi-credit-card-2-back" alt="Cartões"></i>
+        </a>
+        <a href="#investimentos" class="menu-item">
+            <i class="bi bi-reception-4" alt="Investimentos"></i>
+        </a>
+        <a href="#configuração" class="menu-item">
+            <i class="bi bi-gear-fill" alt="Configurasções"></i>
+        </a>
+    </footer>
+
+    <script src="../scripts/investimento.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
